@@ -2,7 +2,7 @@ Package.describe({
   name: "gwendall:template-methods",
   summary: "Useful methods for templates",
   git: "https://github.com/gwendall/meteor-template-methods.git",
-  version: "0.1.0"
+  version: "0.1.1"
 });
 
 Package.onUse(function (api, where) {
