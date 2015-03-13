@@ -10,6 +10,11 @@ Template.parentInstance = function(tpl) {
   return instance;
 }
 
+Template.parentVar = function(tpl, k) {
+  var parent = Template.parentInstance(tpl);
+  return parent[k];
+}
+
 Template.inheritHelpers = function(tpl) {
   tpl.view.template.__helpers = _.extend(Template._templateHelpers(tpl), Template._parentHelpers(tpl));
 }
